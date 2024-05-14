@@ -9,6 +9,8 @@ class Vacante extends Model
 {
     use HasFactory;
 
+    protected $casts = ['ultimo_dia' => 'date'];
+
     protected $fillable = [
         'title',
         'salario_id',
